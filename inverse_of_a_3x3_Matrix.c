@@ -4,24 +4,12 @@
 int main(void)
 {
    float a11,a12,a13,a21,a22,a23,a31,a32,a33,detA;
-   printf("enter the value of a11 \n");
-   scanf("%f",&a11);
-   printf("enter the value of a12 \n");
-   scanf("%f",&a12);
-   printf("enter the value of a13 \n");
-   scanf("%f",&a13);
-   printf("enter the value of a21 \n");
-   scanf("%f",&a21);
-   printf("enter the value of a22 \n");
-   scanf("%f",&a22);
-   printf("enter the value of a23 \n");
-   scanf("%f",&a23);
-   printf("enter the value of a31 \n");
-   scanf("%f",&a31);
-   printf("enter the value of a32 \n");
-   scanf("%f",&a32);
-   printf("enter the value of a33 \n");
-   scanf("%f",&a33);
+   printf("first row a11 a12 a13 \n");
+   scanf("%f %f %f",&a11,&a12,&a13);
+   printf("second row a21 a22 a23 \n");
+   scanf("%f %f %f",&a21,&a22,&a23);
+   printf("third row a31 a32 a33 \n");
+   scanf("%f %f %f",&a31,&a32,&a33);
    detA = a11*(a22*a33 - a32*a23)-a12*(a21*a33 - a31*a23)+a13*(a21*a32 - a31*a22);
    if (detA == 0)
    {
